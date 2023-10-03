@@ -3,6 +3,7 @@ $titulo = "Detalles HOY";
 include "header.php";
 include "conexion.php";
 
+
 $codigo_provincia = $_GET['poblacion'];
 $xml = simplexml_load_file("https://www.aemet.es/xml/municipios/localidad_$codigo_provincia.xml");
 foreach ($xml as $elemento) {
